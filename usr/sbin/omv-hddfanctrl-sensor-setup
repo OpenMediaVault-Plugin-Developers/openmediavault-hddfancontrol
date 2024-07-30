@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# This will use the default choices. The program says some of them might be dangerous,
+# so best let the user know before calling this
+sensors-detect --auto

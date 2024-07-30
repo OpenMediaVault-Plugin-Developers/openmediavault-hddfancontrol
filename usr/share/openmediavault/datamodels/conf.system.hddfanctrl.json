@@ -1,0 +1,96 @@
+{
+	"type": "config",
+	"id": "conf.system.hddfanctrl",
+	"title": "FanCtrl",
+	"queryinfo": {
+		"xpath": "//system/hddfanctrl",
+		"iterable": false
+	},
+	"properties": {
+		"enabled": {
+			"type": "boolean",
+			"default": false
+		},
+		"temp_min": {
+			"type": "integer",
+			"minimum": 0,
+			"maximum": 80,
+			"default": 30
+		},
+		"temp_max": {
+			"type": "integer",
+			"minimum": 20,
+			"maximum": 80,
+			"default": 45
+		},
+		"min_speed_pct": {
+			"type": "integer",
+			"minimum": 0,
+			"maximum": 100,
+			"default": 15
+		},
+		"spindown_minutes": {
+			"type": "integer",
+			"minimum": 0,
+			"default": 0
+		},
+		"temp_update_interval_seconds": {
+			"type": "integer",
+			"minimum": 20,
+			"default": 60
+		},
+		"drives": {
+			"type": "object",
+			"properties": {
+				"drive": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"uuid": {
+								"type": "string",
+								"format": "uuidv4"
+							},
+							"sn": {
+								"type": "string"
+							},
+							"path": {
+								"type": "string"
+							},
+							"is_cooled": {
+								"type": "boolean"
+							}
+						}
+					}
+				}
+			}
+		},
+		"fans": {
+			"type": "object",
+			"properties": {
+				"fan": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"uuid": {
+								"type": "string",
+								"format": "uuidv4"
+							},
+							"hwmon_path": {
+								"type": "string"
+							},
+							"user_name": {
+								"type": "string"
+							},
+							"hdd_fan": {
+								"type": "boolean"
+							}
+						}
+					}
+
+				}
+			}
+		}
+	}
+}

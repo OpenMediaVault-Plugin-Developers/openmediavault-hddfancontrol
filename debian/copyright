@@ -1,0 +1,8 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+
+Files: *
+Copyright: 2024 Roc R. C. <roc@ror3d.xyz>
+License: GPL-3+
+
+License: GPL-3+
+ /usr/share/common-licenses/GPL-3

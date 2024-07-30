@@ -1,0 +1,7 @@
+version: "1.0"
+type: route
+data:
+  url: "/storage/hddfanctrl"
+  title: _("HDD Fan Control")
+  editing: true
+  component: omv-storage-hddfanctrl-tabs-page

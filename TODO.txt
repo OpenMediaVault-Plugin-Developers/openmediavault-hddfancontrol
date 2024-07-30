@@ -1,0 +1,5 @@
+
+Maybe:
+- Auto-update hddfancontrol from pip
+- Page to initially run/configure lm-sensors (needed to control fans)
+- Add temperature readings to hdd tab

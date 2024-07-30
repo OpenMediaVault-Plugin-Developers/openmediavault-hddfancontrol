@@ -1,0 +1,141 @@
+version: "1.0"
+type: component
+data:
+  name: omv-storage-hddfanctrl-tabs-page
+  type: tabsPage
+  config:
+    tabs:
+      - type: form
+        label: _("Config")
+        config:
+          request:
+            service: HddFanCtrl
+            get:
+              method: getConfig
+            post:
+              method: setConfig
+          fields:
+            - type: checkbox
+              name: enabled
+              label: _("Enable HDD Fan Control")
+            - type: numberInput
+              name: spindown_minutes
+              label: _("Spindown Time (Minutes, 0=disabled)")
+              value: 0
+              tooltip: "0 for disabled"
+              modifiers:
+                - type: enabled
+                  constraint: 
+                    operator: truthy
+                    arg0:
+                      prop: enabled
+            - type: numberInput
+              name: temp_update_interval_seconds
+              label: _("Temperature Update Interval (Seconds)")
+              value: 60
+              modifiers:
+                - type: enabled
+                  constraint: 
+                    operator: truthy
+                    arg0:
+                      prop: enabled
+            - type: numberInput
+              name: temp_min
+              label: _("Minimum Speed Temperature (C)")
+              value: 30
+              modifiers:
+                - type: enabled
+                  constraint: 
+                    operator: truthy
+                    arg0:
+                      prop: enabled
+            - type: numberInput
+              name: temp_max
+              label: _("Maximum Speed Temperature (C)")
+              value: 45
+              modifiers:
+                - type: enabled
+                  constraint: 
+                    operator: truthy
+                    arg0:
+                      prop: enabled
+            - type: numberInput
+              name: min_speed_pct
+              label: _("Minimum Speed (%)")
+              value: 10
+              modifiers:
+                - type: enabled
+                  constraint: 
+                    operator: truthy
+                    arg0:
+                      prop: enabled
+          buttons:
+            - template: submit
+            - template: cancel
+
+      - type: datatable
+        label: _("Fans")
+        config:
+          autoReload: 10000
+          selectionType: single
+          updateSelectionOnReload: never
+          store:
+            proxy:
+              service: HddFanCtrl
+              get:
+                method: getFansList
+          columns:
+            - name: _("ID")
+              prop: hwmon_path
+              flexGrow: 1
+              sortable: true
+            - name: _("Speed")
+              prop: speed
+              flexGrow: 1
+              sortable: true
+            - name: _("HDD Fan")
+              prop: hdd_fan
+              flexGrow: 1
+              sortable: true
+              cellTemplateName: checkIcon
+          actions:
+            - type: button
+              text: _("Toggle HDD Fan")
+              execute:
+                type: request
+                request:
+                  service: HddFanCtrl
+                  method: toggleFanForHdd
+                  params: "{{ uuid }}"
+      - type: datatable
+        label: _("Drives")
+        config:
+          autoReload: false
+          store:
+            proxy:
+              service: HddFanCtrl
+              get:
+                method: getHddList
+          columns:
+            - name: _("Serial Number")
+              prop: sn
+              flexGrow: 1
+              sortable: true
+            - name: _("Path")
+              prop: path
+              flexGrow: 1
+              sortable: true
+            - name: _("Is Cooled")
+              prop: is_cooled
+              flexGrow: 1
+              sortable: true
+              cellTemplateName: checkIcon
+          actions:
+            - type: button
+              text: _("Toggle Cooled")
+              execute:
+                type: request
+                request:
+                  service: HddFanCtrl
+                  method: toggleHddCooled
+                  params: "{{ uuid }}"

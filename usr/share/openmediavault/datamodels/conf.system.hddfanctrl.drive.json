@@ -1,0 +1,25 @@
+{
+	"type": "config",
+	"id": "conf.system.hddfanctrl.drive",
+	"title": "FanCtrl Drive",
+	"queryinfo": {
+		"xpath": "//system/hddfanctrl/drives/drive",
+		"iterable": true,
+		"idproperty": "uuid"
+	},
+	"properties": {
+		"uuid": {
+			"type": "string",
+			"format": "uuidv4"
+		},
+		"sn": {
+			"type": "string"
+		},
+		"path": {
+			"type": "string"
+		},
+		"is_cooled": {
+			"type": "boolean"
+		}
+	}
+}

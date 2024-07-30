@@ -1,0 +1,27 @@
+[Unit]
+Description=HDD fan control
+After=hddtemp.service
+
+[Service]
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/opt/omv-hddfanctrl/venv/bin/python -u /opt/omv-hddfanctrl/startup.py
+
+User=root
+
+# Scheduler priority
+CPUSchedulingPolicy=rr
+CPUSchedulingPriority=49
+
+# Hardening
+ProtectSystem=strict
+CacheDirectory=omv-hddfanctrl
+PrivateTmp=true
+ProtectHome=true
+SystemCallArchitectures=native
+MemoryDenyWriteExecute=true
+CapabilityBoundingSet=CAP_SYS_RAWIO CAP_DAC_OVERRIDE
+AmbientCapabilities=CAP_SYS_RAWIO CAP_DAC_OVERRIDE
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

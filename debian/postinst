@@ -1,0 +1,41 @@
+#!/bin/sh
+
+set -e
+
+. /etc/default/openmediavault
+. /usr/share/openmediavault/scripts/helper-functions
+
+case "$1" in
+    configure)
+
+        # Setup config database
+        # Needs to be done before changing the python thing because
+        # omv-confdbadm depends on python
+        echo "Updating configuration database ..."
+        omv-confdbadm create "conf.system.hddfanctrl"
+
+        # Setup python and hddfancontrol from pip
+        if [ ! -d "/opt/omv-hddfanctrl/venv" ]; then
+            mkdir -p /opt/omv-hddfanctrl/venv
+            python3 -m venv /opt/omv-hddfanctrl/venv
+        fi
+        env PATH="/opt/omv-hddfanctrl/venv/bin:$PATH" pip install hddfancontrol
+
+        chmod 770 /opt/omv-hddfanctrl/startup.py
+
+        omv-salt deploy run --no-color --quiet hddfanctrl
+
+        # Activate package triggers
+        dpkg-trigger update-workbench
+    ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
+    ;;
+
+    *)
+        echo "postinst called with unknown argument" >&2
+        exit 1
+    ;;
+esac
+
+exit 0

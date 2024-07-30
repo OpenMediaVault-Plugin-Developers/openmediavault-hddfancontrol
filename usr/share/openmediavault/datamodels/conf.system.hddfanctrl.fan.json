@@ -1,0 +1,26 @@
+{
+	"type": "config",
+	"id": "conf.system.hddfanctrl.fan",
+	"title": "FanCtrl Fan",
+	"queryinfo": {
+		"xpath": "//system/hddfanctrl/fans/fan",
+		"iterable": true,
+		"idproperty": "uuid"
+	},
+	"properties": {
+		"uuid": {
+			"type": "string",
+			"format": "uuidv4"
+		},
+		"hwmon_path": {
+			"type": "string"
+		},
+		"user_name": {
+			"type": "string"
+		},
+		"hdd_fan": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}
