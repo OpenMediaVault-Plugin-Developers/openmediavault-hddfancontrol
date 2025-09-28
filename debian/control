@@ -3,8 +3,8 @@ Section: net
 XB-Plugin-Section: utilities
 Priority: optional
 Maintainer: Roc R. C. <roc@ror3d.xyz>
-Build-Depends: debhelper (>= 13), debhelper-compat (=13)
-Standards-Version: 4.3.0
+Build-Depends: debhelper-compat (= 14), dh-sequence-single-binary
+Standards-Version: 4.7.2
 Homepage: http://omv-extras.org/
 
 Package: openmediavault-hddfanctrl
