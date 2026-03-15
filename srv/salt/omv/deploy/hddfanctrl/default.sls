@@ -1,7 +1,7 @@
 # @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
 # @author    OpenMediaVault Plugin Developers <plugins@omv-extras.org>
 # @author    Roc R.C. <roc@ror3d.xyz>
-# @copyright Copyright (c) 2019-2024 OpenMediaVault Plugin Developers
+# @copyright Copyright (c) 2019-2026 openmediavault plugin developers
 # @copyright Copyright (c) 2024 Roc R.C.
 #
 # This program is free software: you can redistribute it and/or modify

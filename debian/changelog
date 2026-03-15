@@ -1,3 +1,9 @@
+openmediavault-hddfanctrl (8.0) stable; urgency=low
+
+  * Update for omv 8.x
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Sun, 15 Mar 2026 18:44:31 +0000
+
 openmediavault-hddfanctrl (7.0) stable; urgency=low
 
   * Initial release

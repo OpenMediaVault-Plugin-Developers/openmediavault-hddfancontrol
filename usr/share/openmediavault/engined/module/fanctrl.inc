@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (C) 2013-2024 OpenMediaVault Plugin Developers
+ * Copyright (C) 2013-2026 openmediavault plugin developers
  * Copyright (C) 2024 Roc R.C.
  *
  * This program is free software: you can redistribute it and/or modify
