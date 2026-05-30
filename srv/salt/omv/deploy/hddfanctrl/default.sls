@@ -29,7 +29,7 @@ configure_drivetemp_module:
         {{ pillar['headers']['auto_generated'] }}
         {{ pillar['headers']['warning'] }}
         drivetemp
-    - mode: 644
+    - mode: '0644'
 
 restart_systemd_modules_load_service:
   service.running:
@@ -43,7 +43,7 @@ configure_omv_hddfanctrl_dir:
     - name: "{{ confDir }}"
     - user: root
     - group: root
-    - mode: 755
+    - mode: '0755'
     - makedirs: True
 
 configure_omv_hddfanctrl_config:
@@ -51,7 +51,7 @@ configure_omv_hddfanctrl_config:
     - name: "{{ confDir }}/fanctrl.conf"
     - user: root
     - group: root
-    - mode: 644
+    - mode: '0644'
     - contents: |
         {{ pillar['headers']['auto_generated'] }}
         {{ pillar['headers']['warning'] }}
