@@ -3,9 +3,6 @@
 # This file is distributed under the same license as the openmediavault-hddfancontrol package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# Gyuris Gellért <jobel@ujevangelizacio.hu>, 2024
-# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -13,64 +10,63 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-31 00:57+0000\n"
 "PO-Revision-Date: 2024-07-30 10:54+0000\n"
-"Last-Translator: Gyuris Gellért <jobel@ujevangelizacio.hu>, 2024\n"
-"Language-Team: Hungarian (https://app.transifex.com/openmediavault-plugin-developers/teams/1854/hu/)\n"
+"Language-Team: Lao (https://app.transifex.com/openmediavault-plugin-developers/teams/1854/lo/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hu\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: lo\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Config"
-msgstr "Beállítás"
+msgstr ""
 
 msgid "Drives"
-msgstr "Meghajtók"
+msgstr ""
 
 msgid "Enable HDD Fan Control"
-msgstr "HDD ventilátor vezérlés engedélyezése"
+msgstr ""
 
 msgid "Fans"
-msgstr "Ventilátorok"
+msgstr ""
 
 msgid "HDD Fan"
-msgstr "HDD ventilátor"
+msgstr ""
 
 msgid "HDD Fan Control"
-msgstr "HDD ventilátor vezérlés"
+msgstr ""
 
 msgid "ID"
-msgstr "Azonosító"
+msgstr ""
 
 msgid "Is Cooled"
-msgstr "Hűtve van"
+msgstr ""
 
 msgid "Maximum Speed Temperature (C)"
-msgstr "Maximális sebesség hőmérséklet (˚C)"
+msgstr ""
 
 msgid "Minimum Speed (%)"
-msgstr "Minimális sebesség (%)"
+msgstr ""
 
 msgid "Minimum Speed Temperature (C)"
-msgstr "Minimum sebesség hőmérséklet (˚C)"
+msgstr ""
 
 msgid "Path"
-msgstr "Útvonal"
+msgstr ""
 
 msgid "Serial Number"
-msgstr "Sorozatszám"
+msgstr ""
 
 msgid "Speed"
-msgstr "Sebesség"
+msgstr ""
 
 msgid "Spindown Time (Minutes, 0=disabled)"
-msgstr "Lekapcsolási idő (perc, 0=leiltva)"
+msgstr ""
 
 msgid "Temperature Update Interval (Seconds)"
-msgstr "Hőmérséklet frissítési időköz (másodperc)"
+msgstr ""
 
 msgid "Toggle Cooled"
-msgstr "Hűtés átváltása"
+msgstr ""
 
 msgid "Toggle HDD Fan"
-msgstr "HDD ventilátor átváltása"
+msgstr ""

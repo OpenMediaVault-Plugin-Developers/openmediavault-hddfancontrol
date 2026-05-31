@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the openmediavault-hddfancontrol package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Stephan Paternotte <stephan@paternottes.net>, 2025
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-hddfancontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-30 05:51-0500\n"
+"POT-Creation-Date: 2026-05-31 00:57+0000\n"
 "PO-Revision-Date: 2024-07-30 10:54+0000\n"
+"Last-Translator: Stephan Paternotte <stephan@paternottes.net>, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/openmediavault-plugin-developers/teams/1854/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,55 +22,55 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Config"
-msgstr ""
+msgstr "Configuratie"
 
 msgid "Drives"
-msgstr ""
+msgstr "Schijven"
 
 msgid "Enable HDD Fan Control"
-msgstr ""
+msgstr "HDD Fan Control inschakelen"
 
 msgid "Fans"
-msgstr ""
+msgstr "Fans"
 
 msgid "HDD Fan"
-msgstr ""
+msgstr "HDD Fan"
 
 msgid "HDD Fan Control"
-msgstr ""
+msgstr "HDD Fan Control"
 
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgid "Is Cooled"
-msgstr ""
+msgstr "Is gekoeld"
 
 msgid "Maximum Speed Temperature (C)"
-msgstr ""
+msgstr "Temperatuur voor max. snelheid (C)"
 
 msgid "Minimum Speed (%)"
-msgstr ""
+msgstr "Minimale snelheid (%)"
 
 msgid "Minimum Speed Temperature (C)"
-msgstr ""
+msgstr "Temperatuur voor min. snelheid (C)"
 
 msgid "Path"
-msgstr ""
+msgstr "Pad"
 
 msgid "Serial Number"
-msgstr ""
+msgstr "Serienummer"
 
 msgid "Speed"
-msgstr ""
+msgstr "Snelheid"
 
 msgid "Spindown Time (Minutes, 0=disabled)"
-msgstr ""
+msgstr "Spindown-tijd (minuten, 0=uitgeschakeld)"
 
 msgid "Temperature Update Interval (Seconds)"
-msgstr ""
+msgstr "Interval voor temperatuurupdate (seconden)"
 
 msgid "Toggle Cooled"
-msgstr ""
+msgstr "Gekoeld wisselen"
 
 msgid "Toggle HDD Fan"
-msgstr ""
+msgstr "HDD Fan wisselen"

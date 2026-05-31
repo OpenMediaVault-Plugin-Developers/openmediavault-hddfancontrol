@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the openmediavault-hddfancontrol package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Giovanni Scafora <scafora.giovanni@gmail.com>, 2025
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-hddfancontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-30 05:51-0500\n"
+"POT-Creation-Date: 2026-05-31 00:57+0000\n"
 "PO-Revision-Date: 2024-07-30 10:54+0000\n"
+"Last-Translator: Giovanni Scafora <scafora.giovanni@gmail.com>, 2025\n"
 "Language-Team: Italian (https://app.transifex.com/openmediavault-plugin-developers/teams/1854/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,55 +22,55 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 msgid "Config"
-msgstr ""
+msgstr "Configurazione"
 
 msgid "Drives"
-msgstr ""
+msgstr "Unità"
 
 msgid "Enable HDD Fan Control"
-msgstr ""
+msgstr "Abilita il controllo della ventola dell'HDD"
 
 msgid "Fans"
-msgstr ""
+msgstr "Ventole"
 
 msgid "HDD Fan"
-msgstr ""
+msgstr "Ventola dell'HDD"
 
 msgid "HDD Fan Control"
-msgstr ""
+msgstr "Controllo della ventola dell'HDD"
 
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgid "Is Cooled"
-msgstr ""
+msgstr "È raffreddato"
 
 msgid "Maximum Speed Temperature (C)"
-msgstr ""
+msgstr "Temperatura per la velocità massima (C)"
 
 msgid "Minimum Speed (%)"
-msgstr ""
+msgstr "Velocità minima (%)"
 
 msgid "Minimum Speed Temperature (C)"
-msgstr ""
+msgstr "Temperatura per la velocità minima (C)"
 
 msgid "Path"
-msgstr ""
+msgstr "Percorso"
 
 msgid "Serial Number"
-msgstr ""
+msgstr "Numero seriale"
 
 msgid "Speed"
-msgstr ""
+msgstr "Velocità"
 
 msgid "Spindown Time (Minutes, 0=disabled)"
-msgstr ""
+msgstr "Tempo di arresto (minuti, 0=disabilitato)"
 
 msgid "Temperature Update Interval (Seconds)"
-msgstr ""
+msgstr "Intervallo di aggiornamento della temperatura (secondi)"
 
 msgid "Toggle Cooled"
-msgstr ""
+msgstr "Attiva/disattiva raffreddamento"
 
 msgid "Toggle HDD Fan"
-msgstr ""
+msgstr "Attiva/disattiva la ventola dell'HDD"

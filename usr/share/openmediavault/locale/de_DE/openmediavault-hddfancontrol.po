@@ -3,70 +3,74 @@
 # This file is distributed under the same license as the openmediavault-hddfancontrol package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Ettore Atalan <atalanttore@googlemail.com>, 2024
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-hddfancontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-30 05:51-0500\n"
+"POT-Creation-Date: 2026-05-31 00:57+0000\n"
 "PO-Revision-Date: 2024-07-30 10:54+0000\n"
-"Language-Team: German (Germany) (https://app.transifex.com/openmediavault-plugin-developers/teams/1854/de_DE/)\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>, 2024\n"
+"Language-Team: German (https://app.transifex.com/openmediavault-plugin-developers/teams/1854/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de_DE\n"
+"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Config"
-msgstr ""
+msgstr "Konfiguration"
 
 msgid "Drives"
-msgstr ""
+msgstr "Laufwerke"
 
 msgid "Enable HDD Fan Control"
-msgstr ""
+msgstr "HDD-Lüftersteuerung aktivieren"
 
 msgid "Fans"
-msgstr ""
+msgstr "Lüfter"
 
 msgid "HDD Fan"
-msgstr ""
+msgstr "HDD-Lüfter"
 
 msgid "HDD Fan Control"
-msgstr ""
+msgstr "HDD-Lüftersteuerung"
 
 msgid "ID"
-msgstr ""
+msgstr "Kennung"
 
 msgid "Is Cooled"
-msgstr ""
+msgstr "Wird gekühlt"
 
 msgid "Maximum Speed Temperature (C)"
-msgstr ""
+msgstr "Temperatur bei Höchstgeschwindigkeit (C)"
 
 msgid "Minimum Speed (%)"
-msgstr ""
+msgstr "Mindestgeschwindigkeit (%)"
 
 msgid "Minimum Speed Temperature (C)"
-msgstr ""
+msgstr "Temperatur bei Mindestgeschwindigkeit (C)"
 
 msgid "Path"
-msgstr ""
+msgstr "Pfad"
 
 msgid "Serial Number"
-msgstr ""
+msgstr "Seriennummer"
 
 msgid "Speed"
-msgstr ""
+msgstr "Geschwindigkeit"
 
 msgid "Spindown Time (Minutes, 0=disabled)"
-msgstr ""
+msgstr "Spindown-Zeit (Minuten, 0=deaktiviert)"
 
 msgid "Temperature Update Interval (Seconds)"
-msgstr ""
+msgstr "Temperatur-Aktualisierungsintervall (Sekunden)"
 
 msgid "Toggle Cooled"
-msgstr ""
+msgstr "Gekühlt umschalten"
 
 msgid "Toggle HDD Fan"
-msgstr ""
+msgstr "HDD-Lüfter umschalten"
