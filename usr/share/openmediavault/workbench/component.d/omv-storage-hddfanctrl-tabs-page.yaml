@@ -22,7 +22,7 @@ data:
               name: spindown_minutes
               label: _("Spindown Time (Minutes, 0=disabled)")
               value: 0
-              tooltip: "0 for disabled"
+              tooltip: _("0 for disabled")
               modifiers:
                 - type: enabled
                   constraint: 
