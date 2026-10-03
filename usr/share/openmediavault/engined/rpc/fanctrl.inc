@@ -229,11 +229,28 @@ class OMVRpcServiceHddFanCtrl extends \OMV\Rpc\ServiceAbstract
                 $db->set($db_disk);
             }
 
+            $temperature = false;
+            try {
+                if (true === $sd->hasSmartSupport()) {
+                    $si = $sd->getSmartInformation();
+                    $si->setNoCheck("standby");
+                    $si->getPowerMode();
+                    // As on OMV's Disks page, only read available SMART data.
+                    if (true === $si->isCached()) {
+                        $temperature = $si->getTemperature();
+                    }
+                }
+            } catch (\Exception $e) {
+                // An unavailable temperature must not hide the drive list.
+                $temperature = false;
+            }
+
             $results[] = [
                 "uuid" => $db_disk->get("uuid"),
                 "sn" => $disk_sn,
 				"path" => $disk_path,
-                "is_cooled" => $db_disk->get("is_cooled")
+                "is_cooled" => $db_disk->get("is_cooled"),
+                "temperature" => (false === $temperature) ? "" : $temperature
             ];
         }
 
