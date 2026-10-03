@@ -128,7 +128,10 @@ class OMVRpcServiceHddFanCtrl extends \OMV\Rpc\ServiceAbstract
         // Validate the RPC caller context.
         $this->validateMethodContext($context, ['role' => OMV_ROLE_ADMINISTRATOR]);
 
-        $uuid = $params;
+        $uuid = is_array($params) ? ($params['uuid'] ?? NULL) : $params;
+        if (!is_string($uuid) || empty($uuid)) {
+            throw new \OMV\Exception("No fan selected. Select a fan from the list.");
+        }
 
         $db = \OMV\Config\Database::getInstance();
 
@@ -144,7 +147,9 @@ class OMVRpcServiceHddFanCtrl extends \OMV\Rpc\ServiceAbstract
             }
         }
 
-        assert($fan !== NULL);
+        if (is_null($fan)) {
+            throw new \OMV\Exception("The selected fan was not found. Refresh the list and select it again.");
+        }
 
         $fan->set("hdd_fan", !$fan->get("hdd_fan"));
 
@@ -240,7 +245,10 @@ class OMVRpcServiceHddFanCtrl extends \OMV\Rpc\ServiceAbstract
         // Validate the RPC caller context.
         $this->validateMethodContext($context, ['role' => OMV_ROLE_ADMINISTRATOR]);
 
-        $uuid = $params;
+        $uuid = is_array($params) ? ($params['uuid'] ?? NULL) : $params;
+        if (!is_string($uuid) || empty($uuid)) {
+            throw new \OMV\Exception("No drive selected. Select a drive from the list.");
+        }
 
         $db = \OMV\Config\Database::getInstance();
 
@@ -256,7 +264,9 @@ class OMVRpcServiceHddFanCtrl extends \OMV\Rpc\ServiceAbstract
             }
         }
 
-        assert($drive !== NULL);
+        if (is_null($drive)) {
+            throw new \OMV\Exception("The selected drive was not found. Refresh the list and select it again.");
+        }
 
         $drive->set("is_cooled", !$drive->get("is_cooled"));
 
