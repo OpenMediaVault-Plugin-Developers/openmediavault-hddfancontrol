@@ -1,3 +1,10 @@
+openmediavault-hddfanctrl (8.0.1) stable; urgency=low
+
+  * Fix fan and drive selection RPCs
+  * Update dependencies
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Sat, 03 Oct 2026 15:04:29 +0000
+
 openmediavault-hddfanctrl (8.0) stable; urgency=low
 
   * Update for omv 8.x
