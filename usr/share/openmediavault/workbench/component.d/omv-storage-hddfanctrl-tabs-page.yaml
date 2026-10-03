@@ -101,16 +101,21 @@ data:
           actions:
             - type: button
               text: _("Toggle HDD Fan")
+              enabledConstraints:
+                minSelected: 1
+                maxSelected: 1
               execute:
                 type: request
                 request:
                   service: HddFanCtrl
                   method: toggleFanForHdd
-                  params: "{{ uuid }}"
+                  params:
+                    uuid: "{{ _selected[0].uuid }}"
       - type: datatable
         label: _("Drives")
         config:
           autoReload: false
+          selectionType: single
           store:
             proxy:
               service: HddFanCtrl
@@ -133,9 +138,13 @@ data:
           actions:
             - type: button
               text: _("Toggle Cooled")
+              enabledConstraints:
+                minSelected: 1
+                maxSelected: 1
               execute:
                 type: request
                 request:
                   service: HddFanCtrl
                   method: toggleHddCooled
-                  params: "{{ uuid }}"
+                  params:
+                    uuid: "{{ _selected[0].uuid }}"
