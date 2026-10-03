@@ -12,6 +12,7 @@ Architecture: all
 Depends: openmediavault (>= 7),
          python3 (>=3.8),
          python3-venv,
+         hdparm,
          lm-sensors,
          smartmontools,
          ${misc:Depends}
